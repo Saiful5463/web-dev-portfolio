@@ -52,13 +52,31 @@ nav li a {
   text-decoration: none;
 }
 
+.secondary-bg {
+  background-color: #FFF8F3;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #181818;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #757575;
+  margin: 20px 0;
+}
+
 /* header */
 .header {
   background-image: url(../images/developer.png), url(../images/header_bg.png);
   background-repeat: no-repeat;
   background-position: top left, bottom right;
 }
-
+.text-align{
+  text-align: center;
+}
 /* banner style */
 .banner {
   display: flex;
@@ -84,13 +102,38 @@ nav li a {
   width: 580px;
 }
 
-.banner-greetings {
-  font-size: 24px;
-  font-weight: 400;
+/* main style */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+main section {
+  padding-top: 130px;
+  margin-bottom: 130px;
 }
 
-.banner-descriptions {
-  font-size: 16px;
-  font-weight: 400;
-  margin: 20px 0;
+/* about */
+.about {
+  border-radius: 10px;
+  padding: 130px 150px;
+  margin-top: 130px;
+  text-align: center;
+}
+.about-items {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.item-description {
+  font-weight: 600;
+}
+/* skill section style  */
+.skill-container{
+  display: flex;
+  gap: 24px;;
+}
+.skill {
+  padding: 30px;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
 }
