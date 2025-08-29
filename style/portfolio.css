@@ -170,16 +170,21 @@ main section {
 .download-CV {
   margin-top: 50px;
 }
+
 /* footer style  */
 footer {
   display: flex;
   padding: 130px 230px;
   gap: 100px;
 }
+
 .footer-coloum {
   width: 50%;
 }
-footer input[type="text"], footer input[type="email"], footer textarea {
+
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
   height: 64px;
   width: 100%;
   border-radius: 5px;
@@ -188,4 +193,35 @@ footer input[type="text"], footer input[type="email"], footer textarea {
   padding: 10px 20px;
   margin-bottom: 24px;
   border: none;
+}
+
+
+/* responsive media Query */
+.hide {
+  display: none;
+}
+
+@media screen and (max-width:576px) {
+
+  .skill-container,
+  .resume-container,
+  footer,
+  .about-items {
+    flex-direction: column;
+  }
+
+  footer,
+  .about {
+    padding: 20px;
+  }
+
+  .footer-coloum {
+    width: 100%;
+  }
+
+  footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
+    width: calc(100% - 40px);
+  }
 }
